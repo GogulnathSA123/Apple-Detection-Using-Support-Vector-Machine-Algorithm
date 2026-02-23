@@ -149,5 +149,8 @@ Mark detected regions with bounding boxes.
 
 Non-Maximum Suppression (NMS) to remove duplicate detections.
 
+<img width="1053" height="744" alt="Screenshot 2026-02-23 204614" src="https://github.com/user-attachments/assets/73ef524a-b9a9-4e24-8d20-9036f5759538" />
+
+
 
 
