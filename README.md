@@ -53,7 +53,7 @@ Shadows do not distort detection
 
 Preprocessing improves robustness and stability of detection.
 
-#Feature Extraction Using HOG:
+# Feature Extraction Using HOG:
   HOG extracts shape and edge-based features from an image.
 
 Apples are approximately circular objects with strong boundary gradients.
@@ -106,7 +106,7 @@ Local structure
 
 This becomes the input to the SVM classifier.
 
-#Support Vector Machine:
+# Support Vector Machine:
   SVM is a supervised learning algorithm used for classification.
 
 🔹 Training Phase
@@ -123,7 +123,7 @@ SVM finds an optimal hyperplane:
 
 That separates the two classes with maximum margin.
 
-#Detection Phase:
+# Detection Phase:
  For a new image:
 
 🔹 Step 1: Sliding Window
