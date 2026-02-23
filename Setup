@@ -1,0 +1,17 @@
+from google.colab import drive
+import os
+
+# Mount Drive. 'force_remount' fixes common timeout errors.
+drive.mount('/content/drive', force_remount=True)
+
+# Main project folder path
+dataset_dir = '/content/drive/MyDrive/APPLE_DATASETS'
+
+# Verification: Check if the folder actually exists before proceeding
+if os.path.exists(dataset_dir):
+    print(f"Successfully connected to dataset directory: {dataset_dir}")
+    # Print file list to confirm we see the data
+    print("Current directory contents:", os.listdir(dataset_dir))
+else:
+    print(f"Error: The directory '{dataset_dir}' could not be found.")
+    print("verify the folder name in G-Drive.")
