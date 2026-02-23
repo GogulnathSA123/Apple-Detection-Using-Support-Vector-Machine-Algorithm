@@ -147,8 +147,6 @@ Otherwise:
 
 Mark detected regions with bounding boxes.
 
-Optional:
-
 Non-Maximum Suppression (NMS) to remove duplicate detections.
 
 
