@@ -66,45 +66,6 @@ For each pixel:
 Compute horizontal gradient (Gx)
 
 Compute vertical gradient (Gy)
-
-Gradient magnitude:
-
-𝑀
-=
-𝐺
-𝑥
-2
-+
-𝐺
-𝑦
-2
-M=
-Gx
-2
-+Gy
-2
-	​
-
-
-Gradient orientation:
-
-𝜃
-=
-tan
-⁡
-−
-1
-(
-𝐺
-𝑦
-/
-𝐺
-𝑥
-)
-θ=tan
-−1
-(Gy/Gx)
-
 This step detects edges and contours.
 
 🔹 Step 2: Cell Division
@@ -122,32 +83,6 @@ This creates a local shape descriptor.
 🔹 Step 3: Block Normalization
 
 Cells are grouped into blocks (e.g., 2×2 cells).
-
-Normalization formula:
-
-𝑣
-′
-=
-𝑣
-∣
-∣
-𝑣
-∣
-∣
-2
-+
-𝜖
-v
-′
-=
-∣∣v∣∣
-2
-+ϵ
-	​
-
-v
-	​
-
 
 Why normalize?
 
@@ -184,16 +119,7 @@ HOG features of non-apple images → label = 0
 
 SVM finds an optimal hyperplane:
 
-𝑤
-𝑇
-𝑥
-+
-𝑏
-=
-0
-w
-T
-x+b=0
+
 
 That separates the two classes with maximum margin.
 
@@ -211,19 +137,6 @@ Compute HOG for each window region.
 🔹 Step 3: SVM Prediction
 
 Feed feature vector into trained SVM.
-
-If:
-
-𝑤
-𝑇
-𝑥
-+
-𝑏
->
-0
-w
-T
-x+b>0
 
 → Apple detected
 
